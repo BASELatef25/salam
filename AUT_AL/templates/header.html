@@ -6,7 +6,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   	<title>Salam Program</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'header/AUT.png' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'header/salam.png' %}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,10 +23,10 @@
 		<div class="wrapper d-flex align-items-stretch">
 			<nav id="sidebar">
 				<div class="p-4 pt-5">
-		  		<a href="http://www.aut.edu.jo/en" class="img logo rounded-circle mb-5" style="background-image: url({% static 'header/AUT.png' %});"></a>
+		  		<a href="/" class="img logo rounded-circle mb-5" style="background-image: url({% static 'header/salam.png' %});"></a>
                 <center
                     <p>
-                        Aqaba University of Technology
+                       Salam Program
                     </p>
                 </center>
 	        <ul class="list-unstyled components mb-5">
@@ -44,7 +44,7 @@
               <a href="/about">About</a>
               </li>
 	          <li class="active">
-	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Languag</a>
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Language</a>
 	            <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li>
                     <a href=#>English</a>
@@ -54,6 +54,7 @@
                 </li>
 	            </ul>
 	          </li>
+            <!--
               <li>
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages In Social Media</a>
               <ul class="collapse list-unstyled" id="pageSubmenu">
@@ -68,11 +69,18 @@
                 </li>
               </ul>
               </li>
+              -->
+              <!--ssss-->
+              <br>
+              <center>
+               <div class="icons">
+              <a id="rtbr" href="https://www.facebook.com/AqabaUni"><i class="fa fa-facebook"></i></a>
+              <a id="rtbr" href="https://twitter.com/aqabauni?lang=en"><i class="fa fa-twitter"></i></a>
+              <a id="rtbr" href="https://www.instagram.com/aqabauni/?fbclid=IwAR1Dx6-yiQxgfztOHIzeKqg0-gDjFaIy38r5peZqPFN4Md68vflzIRokRiM"><i class="fa fa-instagram"></i></a>
+    </div>
+    </center>
 
 	        </ul>
-
-	        <div class="footer">
-	        </div>
 
 	      </div>
     	</nav>
@@ -100,7 +108,7 @@
                     <a class="nav-link" href="/academic">Academic</a>
                 </li>
                 <li id="headeritems" class="nav-item">
-                    <a class="nav-link" href="/news">Newse</a>
+                    <a class="nav-link" href="/news">News</a>
                 </li>
                 <li id="headeritems" class="nav-item">
                     <a class="nav-link" href="/blog">Blog</a>
@@ -115,10 +123,267 @@
 {% block content %}
 {% endblock %}
 
-        <!---->
-        </div>
-      </div>
 
+        <!--footer-->
+        
+        </div>
+        <footer class="footer">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class="about">
+      <span> Salam Program</span>
+    </p>
+    <p class="menu">
+      <a href="/"> Home</a> |
+      <a href="/Salam_Program"> Salam Program</a> |
+      <a href="/about"> About</a> |
+      <a href="/apply"> Apply Now</a> |
+      <a href="/news"> News</a> |
+      <a href="/blog"> Blog</a>
+    </p>
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+      <i class="fa fa-phone"></i>
+      <p> +962 (0) 6 5548971</p>
+    </div>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p> +962 (0) 6 5548970</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:info@aut.edu.jo">info@aut.edu.jo</a></p>
+    </div>
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>Amman, Jordan</span></p>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+    <center><a href="http://www.aut.edu.jo/en"><img src="{% static 'header/AUT.png' %}" style="width:150px;height:150px;"><h4 style="color:white;"> Aqaba University of Technology</h4></a></center>
+    
+    <center>
+    <div class="icons">
+      <a href="https://www.facebook.com/AqabaUni"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/aqabauni?lang=en"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.instagram.com/aqabauni/?fbclid=IwAR1Dx6-yiQxgfztOHIzeKqg0-gDjFaIy38r5peZqPFN4Md68vflzIRokRiM"><i class="fa fa-instagram"></i></a>
+    </div>
+    </center>
+  </div>
+</footer>
+<style>
+  body{
+    font-family: Cambria,Georgia,serif; 
+  }
+    #background-navbar{
+        min-height: 500px;
+        background-image: url({% static 'header/hed.jpg' %});
+        background-position: bottom;
+        background-size: cover;
+        align-items: flex-start;
+        animation: slides 50s ease-in-out infinite;
+    }
+    @keyframes slides{
+        0%,100%{
+            background-image: url({% static 'header/hed.jpg' %});
+        }
+        20%{
+            background-image: url({% static 'header/1.jpg' %});
+        }
+        40%{
+            background-image: url{% static 'header/2.jpg' %});
+        }
+        60%{
+            background-image: url({% static 'header/3.jpg' %});
+        }
+        70%{
+            background-image: url({% static 'header/4.jpg' %});
+        }
+
+
+
+    }
+.footer {
+  background-color: #181e38;
+  width: 100%;
+  text-align: left;
+  font-family: Cambria,Georgia,serif; 
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+}
+#rtbr{
+  
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* footer left*/
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #0099ff;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #0099ff;
+}
+
+.footer .name {
+  color: #0099ff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+</style>
+      </div>
+      
 		</div>
     
         
@@ -153,7 +418,8 @@
 
 </script>
 </html>
-<style type="text/css">
+<!--
+
     #background-navbar{
         min-height: 500px;
         background-image: url({% static 'header/hed.jpg' %});
@@ -181,6 +447,17 @@
 
 
 
+    }
+-->
+<style type="text/css">
+
+    #background-navbar{
+        min-height: 500px;
+        background-image: url({% static 'header/hedhome.jpg' %});
+        background-position: bottom;
+        background-size: cover;
+        align-items: flex-start;
+        animation: slides 50s ease-in-out infinite;
     }
     #headeritems{
         background-color:#f8b73952;
@@ -251,7 +528,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Cambria,Georgia,serif; 
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -353,7 +630,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: Cambria,Georgia,serif; 
   font-size: 1em; }
 
 pre {
@@ -402,7 +679,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: Cambria,Georgia,serif; 
   font-size: inherit;
   line-height: inherit; }
 
@@ -5084,7 +5361,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Cambria,Georgia,serif; 
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5169,7 +5446,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-family: Cambria,Georgia,serif; 
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8102,7 +8379,7 @@ button.bg-dark:focus {
     margin-left: auto !important; } }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important; }
+  font-family: Cambria,Georgia,serif;  }
 
 .text-justify {
   text-align: justify !important; }
@@ -8333,7 +8610,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: Cambria,Georgia,serif; 
   font-size: 14px;
   line-height: 1.8;
   font-weight: normal;
@@ -8365,7 +8642,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: Cambria,Georgia,serif; 
   color: #000; }
 
 .ftco-section {

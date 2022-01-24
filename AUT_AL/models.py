@@ -1,12 +1,19 @@
 from django.db import models
 
 # Create your models here.
+#salam page models**************************************************
 class AUTIP (models.Model):
     title = models.CharField(max_length=50,blank=True, null=True)
     subtitle = models.CharField(max_length=50,blank=True, null=True)
     text = models.CharField(max_length=2000,blank=True, null=True)
     def __str__(self):
         return self.title
+#Portfolio Modals
+class Portfolio_Modals (models.Model):
+    title = models.CharField(max_length=100)
+    image = models.ImageField(blank=True, null=True)
+    text = models.TextField(max_length=5000,blank=True)
+
 
 
 class Registration(models.Model):
@@ -53,8 +60,16 @@ class faculty_members (models.Model):
     jop= models.CharField(max_length=1000,blank=True)
     image = models.ImageField(blank=True, null=True)
     degree= models.CharField(max_length=1000,blank=True)
-    specialty = models.CharField(max_length=1000,blank=True)
+    facebook = models.CharField(max_length=1500,blank=True)
+    twitter = models.CharField(max_length=1500,blank=True)
+    linkedin = models.CharField(max_length=1500,blank=True)
 
 
 class images (models.Model):
     image = models.ImageField(blank=True, null=True)
+    date = models.DateTimeField(auto_now_add=True)
+    title = models.CharField(max_length=500,blank=True)
+    text = models.CharField(max_length=5000,blank=True)
+
+class aboutprogram (models.Model):
+    name = models.CharField(max_length=5000,blank=True)

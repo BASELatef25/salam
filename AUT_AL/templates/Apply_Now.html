@@ -2,7 +2,6 @@
 {% block content %}
 
 <hr id="shadoo">
-<div class="container-lg" id="maincont">
     <div class="container">
         <p>
             The AUT Salam Exchange Program offers different courses each semester that covers different levels of proficiency.
@@ -55,43 +54,45 @@
                     <h1>
                         Registration
                     </h1>
-                    <p>
+                    <h5>
                         To register, please take the time to fill out the information below.
-                    </p>
+                    </h5>
+                    <hr>
                     <div class="col">
                     <form action="" method="POST">
                     {% csrf_token %}
                     <table><tr><td>
-                    <p>First Name</p>
+                    <h5>First Name</h5>
                      <input type="" required  id="inputrow" name="fname">
                     </td><td>
-                    <p>Last Name</p>
+                    <h5>Last Name</h5>
                     <input type=""  required id="inputrow" name="lname">
                     </td></tr></table>
-                    <p>Email</p>
+                    <h5>Email</h5>
                     <input type=""   required id="inputrow2" name="email">
                     <table><tr>
                     <td>
-                        <p>Phone No</p>
+                        <h5>Phone No</h5>
                         <input type=""  required id="inputrow" name="phoneno">
                     </td>
                     <td>
-                        <p>Birthday</p>
+                        <h5>Birthday</h5>
                         <input type="date" required id="inputrow" name="pirthday">
                     </td>
                     </tr></table>
-                    <p>Address</p>
+                    <h5>Address</h5>
                     <input type="" id="inputrow2" name="address">
-                    <p>Select your option</p>
-                    <input type="radio" required  name="level" value="Intensive Course (Intermediate)"><p>Intensive Course (Intermediate)</p>
-                    <input type="radio"  required name="level"  value="Intensive Course (Advanced)"><p>Intensive Course (Advanced)</p>
-                    <input type="radio" required  name="level" value="Intensive Course (beginners)"><p>Intensive Course (beginners)</p>
-                    <input type="submit" value="continue" name="apply">
+                    <h5>Select your option</h5>
+                    <input type="radio" required  name="level" value="Intensive Course (Intermediate)"><h5>(Intermediate)</h5>
+                    <input type="radio"  required name="level"  value="Intensive Course (Advanced)"><h5>(Advanced)</h5>
+                    <input type="radio" required  name="level" value="Intensive Course (beginners)"><h5>(beginners)</h5>
+                    <input type="submit" value="Register" name="apply">
                     </form>
                     </div>
 
                 </div>
             </div>
+</div>
 </div>
 
 
