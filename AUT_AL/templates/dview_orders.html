@@ -1,0 +1,32 @@
+{% extends "header.html" %}
+{% block content %}
+{% load static %}
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>First name</th>
+        <th>Larst name</th>
+        <th>full name</th>
+        <th>Email</th>
+        <th>Phone no</th>
+        <th>Pirthday</th>
+        <th>Address</th>
+        <th>Level</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for item in data1 %}
+      <tr>
+        <th>{{item.fname}}</th>
+        <th>{{item.lname}}</th>
+        <th>{{item.fname}} {{item.lname}}</th>
+        <th>{{item.email}}</th>
+        <th>{{item.phoneno}}</th>
+        <th>{{item.pirthday}}</th>
+        <th>{{item.address}}</th>
+        <th>{{item.level}}</th>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

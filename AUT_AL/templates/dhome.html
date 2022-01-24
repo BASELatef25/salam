@@ -1,0 +1,59 @@
+{% extends "header.html" %}
+{% block content %}
+{% load static %}
+
+
+
+
+
+<center><h1>home slides</h1></center>
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <div class="mb-3 mt-3">
+    <label for="title" class="form-label">title:</label>
+    <input type="text" class="form-control" name="title">
+  </div>
+  <div class="form-check mb-3">
+    <label for="title" class="form-label">text:</label>
+    <textarea  name="text" Style="width:100%;" rows="4" cols="5" maxlength="5000">Enter text here...</textarea>
+  </div>
+  <div class="mb-3">
+    <label for="pwd" class="form-label">link:</label>
+    <input type="text" class="form-control" id="pwd" name="link">
+  </div>
+  <div class="form-check mb-3">
+  <input  name="image" type="file">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<br>
+<br>
+<table class="table table-bordered">
+<tr>
+<td>id</td>
+<td>title</td>
+<td>delete</td>
+</tr>
+{% for item in slid %}
+    <tr>
+    <td>{{item.id}}</td>
+    <td>{{item.title}}</td>
+    <td><img style="width:50px;" src="/static/images/{{ item.image }}"></td>
+    <td>
+    <a href="{% url 'delete_slide' id=item.id %}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+    </tr>
+{% endfor %}
+</table>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
