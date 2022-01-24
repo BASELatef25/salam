@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-nqy7npli-2s0p6l@o91#rjm&-(v$zrfc+5krn&^rrq8ys6rj3(
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'salam.aut.edu.jo'
+    'salam.aut.edu.jo',
+    'localhost:8000',
+    'localhost'
 ]
 
 
