@@ -71,6 +71,9 @@
 
 	        </ul>
 
+	        <div class="footer">
+	        </div>
+
 	      </div>
     	</nav>
 
@@ -97,7 +100,7 @@
                     <a class="nav-link" href="/academic">Academic</a>
                 </li>
                 <li id="headeritems" class="nav-item">
-                    <a class="nav-link" href="/news">News</a>
+                    <a class="nav-link" href="/news">Newse</a>
                 </li>
                 <li id="headeritems" class="nav-item">
                     <a class="nav-link" href="/blog">Blog</a>
@@ -112,222 +115,10 @@
 {% block content %}
 {% endblock %}
 
-
-        <!--footer-->
-        
+        <!---->
         </div>
-        <footer class="footer">
-  <div class="footer-left col-md-4 col-sm-6">
-    <p class="about">
-      <span> Salam Program</span>
-       AUT is a Jordanian national institution established to operate in Jordan and the region in general and Aqaba in particular. Officially accredited by the Ministry of Higher Education and Scientific Research, Jordan. Aqaba University of Technology (AUT) offers courses and programs leading to officially recognized higher education degrees such as bachelor's degrees in several areas of study: IT, Administrative and Financial Sciences, Engineering, Pharmacy, Physical Therapy, and Medical Radiology.
-    </p>
-    <p class="menu">
-      <a href="/"> Home</a> |
-      <a href="/Salam_Program"> Salam Program</a> |
-      <a href="/about"> About</a> |
-      <a href="/apply"> Apply Now</a> |
-      <a href="/news"> News</a> |
-      <a href="/blog"> Blog</a>
-    </p>
-  </div>
-  <div class="footer-center col-md-4 col-sm-6">
-    <div>
-      <i class="fa fa-phone"></i>
-      <p> +962 (0) 6 5548971</p>
-    </div>
-    <div>
-      <i class="fa fa-phone"></i>
-      <p> +962 (0) 6 5548970</p>
-    </div>
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="mailto:info@aut.edu.jo">info@aut.edu.jo</a></p>
-    </div>
-    <div>
-      <i class="fa fa-map-marker"></i>
-      <p><span>Amman, Jordan</span></p>
-    </div>
-  </div>
-  <div class="footer-right col-md-4 col-sm-6">
-    <center><a href="http://www.aut.edu.jo/en"><img src="{% static 'header/AUT.png' %}" style="width:150px;height:150px;"><h4> Aqaba University of Technology</h4></a></center>
-    
-    <center>
-    <div class="icons">
-      <a href="https://www.facebook.com/AqabaUni"><i class="fa fa-facebook"></i></a>
-      <a href="https://twitter.com/aqabauni?lang=en"><i class="fa fa-twitter"></i></a>
-      <a href="https://www.instagram.com/aqabauni/?fbclid=IwAR1Dx6-yiQxgfztOHIzeKqg0-gDjFaIy38r5peZqPFN4Md68vflzIRokRiM"><i class="fa fa-instagram"></i></a>
-    </div>
-    </center>
-  </div>
-</footer>
-<style>
-.footer {
-  background-color: #181e38;
-  width: 100%;
-  text-align: left;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  padding: 50px;
-  margin-top: 50px;
-}
-
-.footer .footer-left,
-.footer .footer-center,
-.footer .footer-right {
-  display: inline-block;
-  vertical-align: top;
-}
-
-
-/* footer left*/
-
-.footer .footer-left {
-  width: 33%;
-  padding-right: 15px;
-}
-
-.footer .about {
-  line-height: 20px;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer .about span {
-  display: block;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.footer .icons {
-  margin-top: 25px;
-}
-
-.footer .icons a {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-  background-color: #33383b;
-  border-radius: 2px;
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 35px;
-  margin-right: 3px;
-  margin-bottom: 5px;
-}
-
-
-/* footer center*/
-
-.footer .footer-center {
-  width: 30%;
-}
-
-.footer .footer-center i {
-  background-color: #33383b;
-  color: #ffffff;
-  font-size: 25px;
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 42px;
-  margin: 10px 15px;
-  vertical-align: middle;
-}
-
-.footer .footer-center i.fa-envelope {
-  font-size: 17px;
-  line-height: 38px;
-}
-
-.footer .footer-center p {
-  display: inline-block;
-  color: #ffffff;
-  vertical-align: middle;
-  margin: 0;
-}
-
-.footer .footer-center p span {
-  display: block;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 2;
-}
-
-.footer .footer-center p a {
-  color: #0099ff;
-  text-decoration: none;
-}
-
-
-/* footer right*/
-
-.footer .footer-right {
-  width: 35%;
-}
-
-.footer h2 {
-  color: #ffffff;
-  font-size: 36px;
-  font-weight: normal;
-  margin: 0;
-}
-
-.footer h2 span {
-  color: #0099ff;
-}
-
-.footer .menu {
-  color: #ffffff;
-  margin: 20px 0 12px;
-  padding: 0;
-}
-
-.footer .menu a {
-  display: inline-block;
-  line-height: 1.8;
-  text-decoration: none;
-  color: inherit;
-}
-
-.footer .menu a:hover {
-  color: #0099ff;
-}
-
-.footer .name {
-  color: #0099ff;
-  font-size: 14px;
-  font-weight: normal;
-  margin: 0;
-}
-
-@media (max-width: 767px) {
-  .footer {
-    font-size: 14px;
-  }
-  .footer .footer-left,
-  .footer .footer-center,
-  .footer .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-  .footer .footer-center i {
-    margin-left: 0;
-  }
-}
-</style>
       </div>
-      
+
 		</div>
     
         

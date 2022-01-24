@@ -10,9 +10,7 @@ def home (request):
     return render(request,'AUT_AL.html',context)
 def AUT_Intercultural_Program (request):
     add=AUTIP.objects.all()
-    add2=Portfolio_Modals.objects.all()
-    context={'adds':add,'Portfolio':add2}
-    return render(request,'AUT_Intercultural_Program.html',context)
+    return render(request,'AUT_Intercultural_Program.html',{'adds':add})
 def About (request):
     img=images.objects.all()
     return render(request,'About.html',{'images':img})
