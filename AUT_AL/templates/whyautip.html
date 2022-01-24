@@ -4,12 +4,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <div class="container">
-	<div id="tite"><center><h1>Salam Program</h1><h2>Why should you choose?</h2></center></div>
+	<div id="tite"><center><h2>Why should you choose?</h2><h1>Salam Program</h1></center></div>
     <div class="row">
         <div id="baro" class="row">
             {% for item in data %}
                 <div class="sidenav">
-                <center><a id="x{{item.id}}" href="#f">{{item.title}}</a></center>
+                <a id="x{{item.id}}" href="#f">{{item.title}}</a>
                 </div>
             {% endfor %}
         </div>
@@ -82,7 +82,7 @@ $(document).ready(function(){
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   color:  #e7b234;
   display: block;
 }

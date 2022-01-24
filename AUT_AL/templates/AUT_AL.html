@@ -3,18 +3,13 @@
 {% load static %}
 <!-- Slideshow container -->
 <div class="slideshow-container">
-  <center>
-  <h3>
-  The most famous tourist places in Jordan
-  </h3>
-  </center>
+  <center>The most famous tourist places in Jordan</center>
 </div>
 <div class="slideshow-container">
 
   <!-- Full-width slides/quotes -->
   {% for item in slid %}
   <div class="mySlides">
-    <center>
     <div style="
     max-width: 400px;
     min-width: 240px;
@@ -24,9 +19,8 @@
     padding: 10px;
         margin-bottom: 20px;">
       <h4>{{ item.title }}</h4>
-      <div style="
-    font-size: 99%;
-    color: #ffffff;">
+      <div style="font-size:8pt;
+    color: #ffb100;">
       {{ item.pragrapg }}
       </div>
       <br>
@@ -35,7 +29,6 @@
     height: 29px;
     font-size: 7pt;" type="button" class="btn btn-dark">read mor</button></a>
     </div>
-    </center>
     <div>
     <img src="/static/images/{{ item.image }}"    id="fnfn">
     </div>
@@ -61,11 +54,7 @@
 
 
 <div class="slideshow-container">
-  <center>
-  <h2>
-  News
-  </h2>
-  </center>
+  <center>News</center>
 </div>
 <div _ngcontent-aqw-c51="" class="row blogs">
 
@@ -115,6 +104,7 @@
 /* Slideshow container */
 .slideshow-container {
   position: relative;
+  background: #f8b739;
 }
 
 /* Slides */
@@ -134,7 +124,6 @@
   font-size: 20px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-      margin-top: -8px
 }
 
 /* Position the "next button" to the right */
@@ -154,7 +143,7 @@
 .dot-container {
   text-align: center;
   padding: 20px;
-    position: unset;
+  background: #f8b739;
 }
 
 /* The dots/bullets/indicators */
