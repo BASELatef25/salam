@@ -1,6 +1,9 @@
-{% extends "headerhome.html" %}
+{% extends "header.html" %}
 {% block content %}
 {% load static %}
+<br>
+<br>
+<br>
 <!-- Slideshow container -->
 <div class="slideshow-container">
   <center>
@@ -21,12 +24,14 @@
     position: absolute;
     background-color: #4b4b4ba1;
     height: -webkit-fill-available;
-    padding: 10px;
+    padding: 25px;
         margin-bottom: 20px;">
       <h4>{{ item.title }}</h4>
+      <br>
       <div style="
     font-size: 99%;
-    color: #ffffff;">
+    color: #ffffff;
+    text-align: justify;">
       {{ item.pragrapg }}
       </div>
       <br>
@@ -60,16 +65,16 @@
 
 
 
-<div class="slideshow-container">
+
+<div _ngcontent-aqw-c51="" class="row blogs">
+<!--
+{% for item in news %}<div class="slideshow-container">
   <center>
   <h2>
   News
   </h2>
   </center>
 </div>
-<div _ngcontent-aqw-c51="" class="row blogs">
-
-{% for item in news %}
 <div _ngcontent-aqw-c51="" class="col-lg-6 blog" style="cursor: pointer;" tabindex="0">
   <div _ngcontent-aqw-c51="" class="image" style="background-image: url(&quot;/static/images/{{item.image}}&quot;); background-repeat: no-repeat; background-size: cover;height: 223px;">
     <div _ngcontent-aqw-c51="" class="date" style=" background-color: #181e38;width: 69px;padding: 15px;">
@@ -83,6 +88,7 @@
   </div>
 </div>
 {% endfor %}
+-->
 
 </div>
 
@@ -112,6 +118,9 @@
 
 
 <style>
+  #Home12345678{
+    color: #f8b739;
+  }
 /* Slideshow container */
 .slideshow-container {
   position: relative;

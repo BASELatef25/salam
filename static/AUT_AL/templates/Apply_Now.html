@@ -1,0 +1,156 @@
+{% extends "header.html" %}
+{% block content %}
+<br>
+    <div class="container">
+        <h5>
+            The AUT Salam Exchange Program offers different courses each semester that covers different levels of proficiency.
+        </h5>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <p id="textstyle">
+                Very affordable fees, Including 
+            </p>
+            <ul>
+                <li>
+                    Tuition fees of 1000JDs for the 1-month Program, 1800JDs for 2 months Program.
+                </li>
+                <li>
+                    Transportation to and from campus.
+                </li>
+                <li>
+                    Communicating with Arabs, both on-campus and off- campus means you won’t just learn Arabic – you’ll live it.
+                </li>
+                <li>
+                    The university-certified course that you will surely add to your CV while abroad.
+                </li>
+                <li>
+                    Social events, with Jordanian people, and other participants from other countries.
+                </li>
+                <li>
+                    On-campus accommodation: private rooms, shared rooms, furnished apartments.
+                </li>
+            </ul>
+          </div>
+          <div class="col">
+                <center>
+                    <p id="textstyle">
+                        APPLY NOW BEGIN YOUR JOURNEY TODAY!
+                    </p>
+                </center>
+
+                <div id="registerform">
+                    <h1>
+                        Registration
+                    </h1>
+                    <h5>
+                        To register, please take the time to fill out the information below.
+                    </h5>
+                    <hr>
+                    <div class="col">
+                    <form action="" method="POST">
+                    {% csrf_token %}
+                    <table><tr><td>
+                    <h5>First Name</h5>
+                     <input type="" required  id="inputrow" name="fname">
+                    </td><td>
+                    <h5>Last Name</h5>
+                    <input type=""  required id="inputrow" name="lname">
+                    </td></tr></table>
+                    <h5>Email</h5>
+                    <input type=""   required id="inputrow2" name="email">
+                    <table><tr>
+                    <td>
+                        <h5>Phone No</h5>
+                        <input type=""  required id="inputrow" name="phoneno">
+                    </td>
+                    <td>
+                        <h5>Birthday</h5>
+                        <input type="date" required id="inputrow" name="pirthday">
+                    </td>
+                    </tr></table>
+                    <h5>Address</h5>
+                    <input type="" id="inputrow2" name="address">
+                    <h5>Select your option</h5>
+                    <h5><input id="radiobot" type="radio" required  name="level" value="Intensive Course (Intermediate)">(Intermediate)</h5>
+                    <h5><input id="radiobot" type="radio"  required name="level"  value="Intensive Course (Advanced)">(Advanced)</h5>
+                    <h5><input id="radiobot" type="radio" required  name="level" value="Intensive Course (beginners)">(beginners)</h5>
+                    <input type="submit" value="Register" name="apply">
+                    </form>
+                    </div>
+
+                </div>
+            </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+    #radiobot{
+        width: 20px;
+        height: 20px;
+    margin-right: 7px;
+    }
+    
+  #apply12345678{
+    color: #f8b739;
+  }
+	#maincont{
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 6px 0px grey;
+        padding: 10px ;
+    }
+    #shadoo{
+        box-shadow: -20px -18px 700px 200px grey;
+        margin-top: -41px;
+    }
+    #contact{
+        width: 360px;
+        margin: auto;
+        box-shadow: 0px 0px 6px 0px grey;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    #textstyle{
+        color: #black;
+        font-size: 15pt;
+    }
+    #registerform{
+        width:360px ;
+        background-color: #b6b5b5;
+        padding: 25px;
+        margin: auto;
+        
+    }
+    #inputrow{
+        width:150px;
+        height: 30px;
+    }
+    #inputrow2{
+        width:300px;
+        height: 30px;
+    }
+</style>
+{% endblock %}
+<!--#323232-->>

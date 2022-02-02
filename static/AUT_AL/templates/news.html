@@ -1,0 +1,36 @@
+{% extends "header.html" %}
+{% block content %}
+{% load static %}
+
+
+<div class="slideshow-container">
+  <center><h2>News</h2></center>
+</div>
+<div _ngcontent-aqw-c51="" class="row blogs">
+
+{% for item in news %}
+<div _ngcontent-aqw-c51="" class="col-lg-6 blog" style="cursor: pointer;" tabindex="0">
+  <div _ngcontent-aqw-c51="" class="image" style="background-image: url(&quot;/static/images/{{item.image}}&quot;); background-repeat: no-repeat; background-size: cover;height: 300px;">
+    <div _ngcontent-aqw-c51="" class="date" style=" background-color: #181e38;width: 69px;padding: 15px;">
+      <h6 _ngcontent-aqw-c51="">{{item.day}}</h6>
+      <h6 _ngcontent-aqw-c51="">{{item.month}}</h6>
+    </div>
+  </div>
+  <div _ngcontent-aqw-c51="" class="content">
+    <h4 _ngcontent-aqw-c51="">{{item.title}}</h4>
+    <p _ngcontent-aqw-c51="">{{item.pragrapg}}</p>
+  </div>
+</div>
+{% endfor %}
+</div>
+
+
+
+
+<style>
+.slideshow-container {
+  position: relative;
+  background: #f8b739;
+}
+</style>
+{% endblock %}

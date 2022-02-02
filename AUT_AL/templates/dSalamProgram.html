@@ -7,8 +7,8 @@
 	<div style="background-color: #d84315;width: 50%;">
 		<center>
 		<h1>Courses</h1>
-		<h4>Title</h4><input type="" name="" id="w" name="Title">
-		<h4>Subtitle</h4><input type="" name="" id="w" name="Subtitle">
+		<h4>Title</h4><input type="" name="Title" id="w" name="Title">
+		<h4>Subtitle</h4><input type="" name="Subtitle" id="w" name="Subtitle">
 		<h4>Text</h4><textarea id="w" name="Text"></textarea>
 		<br>
 		<button type="submit" class="btn btn-primary">save</button>
@@ -21,6 +21,23 @@
 </form>
 
 
+<br>
+<br>
+<table class="table table-bordered">
+<tr>
+<td>id</td>
+<td>title</td>
+<td>delete</td>
+</tr>
+{% for item in course %}
+    <tr>
+    <td>{{item.id}}</td>
+    <td>{{item.title}}</td>
+    <td>
+    <a href="{% url 'delete_course' id=item.id %}"><button type="button" class="btn btn-danger">Delete</button></a></td>
+    </tr>
+{% endfor %}
+</table>
 
 
 

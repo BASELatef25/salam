@@ -1,0 +1,68 @@
+{% extends "header.html" %}
+{% block content %}
+{% load static %}
+
+
+<div id="blogs">
+			<div class="container">
+				{% for item in blogs.id=7 %}
+				<div id="blogsrow" class="row" style="margin: 10px;">
+					<div id="backgroundi" >
+						<img id="background" src="/static/images/{{item.image}}">
+					</div>
+					<div>
+						<h1>{{item.title}}</h1>
+						<p>{{item.pragrapg1}}</p>
+						<p>{{item.date}}</p>
+						<a id="redmore" href="{{item.id}}"><p>red more</p></a>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+	#blogsrow{
+		background-color: #e7b234;
+		margin: 10px;
+		padding: 10px;
+		border-radius: 15px;
+	}
+	#background:hover{
+		background-image: url({% static 'header/AUT.png' %});
+	}
+	#background{
+		background-color:
+		blue;width: 330px;
+		height: 215px;
+		margin: 10px;
+		background-image: url(https://icon-library.com/images/gallery-icon-android/gallery-icon-android-15.jpg);
+		background-size: cover;
+		border-radius: 5px;
+	}
+	#backgroundi{
+		blue;width: 330px;
+		height: 215px;
+		border-radius: 5px;
+	}
+	#titeofblog{
+		background-color: #e7b234;
+		border-radius: 5px;
+	}
+	#blogs{
+		padding: 5px;
+	}
+	#redmore{
+		color: #444444;
+	}
+</style>
+{% endblock %}

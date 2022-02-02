@@ -1,7 +1,25 @@
+from turtle import title
 from django.db import models
 
 # Create your models here.
 #salam page models**************************************************
+
+
+
+
+
+
+#salam site elements
+class salam (models.Model):
+    page = models.CharField(max_length=50,blank=True, null=True)
+    elements = models.CharField(max_length=50,blank=True, null=True)
+    title = models.CharField(max_length=50,blank=True, null=True)
+    subtitle = models.CharField(max_length=500,blank=True, null=True)
+    link = models.CharField(max_length=500,blank=True, null=True)
+    text = models.TextField(max_length=5000,blank=True)
+    text2 = models.TextField(max_length=5000,blank=True)
+    image = models.ImageField(blank=True, null=True)
+
 class AUTIP (models.Model):
     title = models.CharField(max_length=50,blank=True, null=True)
     subtitle = models.CharField(max_length=50,blank=True, null=True)

@@ -1,17 +1,16 @@
 {% extends "header.html" %}
 {% block content %}
-
-<hr id="shadoo">
+<br>
     <div class="container">
-        <p>
+        <h5>
             The AUT Salam Exchange Program offers different courses each semester that covers different levels of proficiency.
-        </p>
+        </h5>
     </div>
     <div class="container">
         <div class="row">
           <div class="col">
             <p id="textstyle">
-                VERY AFFORDABLE FEES,  INCLUDING 
+                Very affordable fees, Including 
             </p>
             <ul>
                 <li>
@@ -33,15 +32,6 @@
                     On-campus accommodation: private rooms, shared rooms, furnished apartments.
                 </li>
             </ul>
-            <div id="contact">
-                <h5 id="textstyle">
-                    Questions and Contact Ways
-                </h5>
-                <p id="textstyle">South of Aqaba, South Beach Road, Opposite Aqaba Development Corporation Stores, Aqaba, Jordan</p>
-                <p id="textstyle">+962 (0) 3 2092300</p>
-                <p id="textstyle">+962 (0) 3 2092310</p>
-                <p id="textstyle">Working Hours: 8:00 - 4:00PM (Thursday: 8:00 - 2:00PM)</p>
-            </div>
           </div>
           <div class="col">
                 <center>
@@ -83,9 +73,9 @@
                     <h5>Address</h5>
                     <input type="" id="inputrow2" name="address">
                     <h5>Select your option</h5>
-                    <input type="radio" required  name="level" value="Intensive Course (Intermediate)"><h5>(Intermediate)</h5>
-                    <input type="radio"  required name="level"  value="Intensive Course (Advanced)"><h5>(Advanced)</h5>
-                    <input type="radio" required  name="level" value="Intensive Course (beginners)"><h5>(beginners)</h5>
+                    <h5><input id="radiobot" type="radio" required  name="level" value="Intensive Course (Intermediate)">(Intermediate)</h5>
+                    <h5><input id="radiobot" type="radio"  required name="level"  value="Intensive Course (Advanced)">(Advanced)</h5>
+                    <h5><input id="radiobot" type="radio" required  name="level" value="Intensive Course (beginners)">(beginners)</h5>
                     <input type="submit" value="Register" name="apply">
                     </form>
                     </div>
@@ -115,6 +105,15 @@
 
 
 <style type="text/css">
+    #radiobot{
+        width: 20px;
+        height: 20px;
+    margin-right: 7px;
+    }
+    
+  #apply12345678{
+    color: #f8b739;
+  }
 	#maincont{
         border-style: solid;
         border-width: 1px;
@@ -134,7 +133,8 @@
         padding: 10px;
     }
     #textstyle{
-        color: #ff8400;
+        color: #black;
+        font-size: 15pt;
     }
     #registerform{
         width:360px ;

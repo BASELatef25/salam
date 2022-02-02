@@ -21,39 +21,43 @@
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar">
-				<div class="p-4 pt-5">
+			<nav id="sidebar" >
+				<div class="p-4 pt-5" style=" position: sticky;z-index: 0;top: 0;    padding-top: 90px !important; ">
 		  		<a href="/" class="img logo rounded-circle mb-5" style="background-image: url({% static 'header/salam.png' %});"></a>
-                <center
-                    <p>
+                <center>
+                    <p style="margin-top: -75px;">
                        Salam Program
                     </p>
                 </center>
 	        <ul class="list-unstyled components mb-5">
 
-              <li>
-                  <a href="/">Home</a>
+              <li  >
+                  <a id="Home12345678" href="/">Home</a>
               </li>
               <li>
-              <a href="/Salam_Program">Salam Program</a>
+              <a  id="Salam_Program12345678" href="/Salam_Program">Salam Program</a>
               </li>
               <li>
-              <a href="/apply">Apply Now</a>
+              <a  id="apply12345678" id="" href="/apply">Apply Now</a>
               </li>
               <li>
-              <a href="/about">About</a>
+              <a  id="about12345678" href="/about">About</a>
               </li>
+              <li>
+              <a  id="Popular_tourism_places12345678" href="/Popular_tourism_places">Popular_tourism_places</a>
+              </li>
+              <!--
 	          <li class="active">
 	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Language</a>
 	            <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li>
                     <a href=#>English</a>
                 </li>
-                <li>
-                    <a href="#">العربية</a>
+                <li><a href="#">العربية</a>
                 </li>
 	            </ul>
 	          </li>
+            -->
             <!--
               <li>
               <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages In Social Media</a>
@@ -87,8 +91,17 @@
 
         <!-- Page Content  -->
       <div id="content" class="">
+        <div id="background-navbar">
+          
+        </div>
 
-        <nav id="background-navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="
+    top: 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+ ">
           <div class="container-fluid" id="container-fluid">
 
             <button type="button" id="sidebarCollapse" class="btn btn-primary">
@@ -99,11 +112,10 @@
                 <i class="fa fa-bars"></i>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
               <ul id="navitems111" class="nav navbar-nav">
                 <li id="headeritems" class="nav-item">
-                    <a class="nav-link" href="/whySalam_Program">Why Salam</a>
-                </li>
+                    <a class="nav-link" href="/Salam_Program" >Why Salam</a>                </li>
                 <li id="headeritems" class="nav-item">
                     <a class="nav-link" href="/academic">Academic</a>
                 </li>
@@ -119,44 +131,44 @@
         </nav>
 
         <div class="container-lg">
-            <!--imort your temp-->
-{% block content %}
-{% endblock %}
+                                  <!--imort your temp-->
+                                        {% block content %}
+                                        {% endblock %}
 
 
-        <!--footer-->
+                              <!--footer-->
         
         </div>
         <footer class="footer">
   <div class="footer-left col-md-4 col-sm-6">
     <p class="about">
-      <span> Salam Program</span>
+      <h3 style="color:white;"> Salam Program</h3>
     </p>
     <p class="menu">
-      <a href="/"> Home</a> |
-      <a href="/Salam_Program"> Salam Program</a> |
-      <a href="/about"> About</a> |
-      <a href="/apply"> Apply Now</a> |
-      <a href="/news"> News</a> |
+      <a href="/"> Home</a> <br>
+      <a href="/Salam_Program"> Salam Program</a> <br>
+      <a href="/about"> About</a> <br>
+      <a href="/apply"> Apply Now</a> <br>
+      <a href="/news"> News</a> <br>
       <a href="/blog"> Blog</a>
     </p>
   </div>
   <div class="footer-center col-md-4 col-sm-6">
     <div>
       <i class="fa fa-phone"></i>
-      <p> +962 (0) 6 5548971</p>
+      <p> +962 (0) 3 2092310</p>
     </div>
     <div>
       <i class="fa fa-phone"></i>
-      <p> +962 (0) 6 5548970</p>
+      <p> +962 (0) 3 2092300</p>
     </div>
     <div>
       <i class="fa fa-envelope"></i>
-      <p><a href="mailto:info@aut.edu.jo">info@aut.edu.jo</a></p>
+       <p><a href="mailto:Salam_Program@aut.edu.jo">Salam_Program@aut.edu.jo</a>
     </div>
     <div>
       <i class="fa fa-map-marker"></i>
-      <p><span>Amman, Jordan</span></p>
+      <p><span>Aqaba, Jordan</span></p>
     </div>
   </div>
   <div class="footer-right col-md-4 col-sm-6">
@@ -172,45 +184,17 @@
   </div>
 </footer>
 <style>
-  body{
-    font-family: Cambria,Georgia,serif; 
-  }
-    #background-navbar{
-        min-height: 500px;
-        background-image: url({% static 'header/hed.jpg' %});
-        background-position: bottom;
-        background-size: cover;
-        align-items: flex-start;
-        animation: slides 50s ease-in-out infinite;
-    }
-    @keyframes slides{
-        0%,100%{
-            background-image: url({% static 'header/hed.jpg' %});
-        }
-        20%{
-            background-image: url({% static 'header/1.jpg' %});
-        }
-        40%{
-            background-image: url{% static 'header/2.jpg' %});
-        }
-        60%{
-            background-image: url({% static 'header/3.jpg' %});
-        }
-        70%{
-            background-image: url({% static 'header/4.jpg' %});
-        }
-
-
-
-    }
+#tdkggggkgh{
+  margin: 0;  position: absolute;bottom: 0%;  padding-left: 18px;
+}
 .footer {
-  background-color: #181e38;
+  background-color:#228db5;
   width: 100%;
   text-align: left;
-  font-family: Cambria,Georgia,serif; 
+  font-family: sans-serif;
   font-weight: bold;
   font-size: 16px;
-  padding: 50px;
+  padding: 20px;
   margin-top: 50px;
 }
 #rtbr{
@@ -319,7 +303,7 @@
 }
 
 .footer .footer-center p a {
-  color: #0099ff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -423,7 +407,7 @@
     #background-navbar{
         min-height: 500px;
         background-image: url({% static 'header/hed.jpg' %});
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
         align-items: flex-start;
         animation: slides 50s ease-in-out infinite;
@@ -452,10 +436,11 @@
 <style type="text/css">
 
     #background-navbar{
-        min-height: 500px;
+        min-height: inherit;
         background-image: url({% static 'header/hedhome.jpg' %});
-        background-position: bottom;
+        background-position: center;
         background-size: cover;
+        background-repeat:no-repeat;
         align-items: flex-start;
         animation: slides 50s ease-in-out infinite;
     }
@@ -528,7 +513,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: Cambria,Georgia,serif; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -630,7 +615,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: Cambria,Georgia,serif; 
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 1em; }
 
 pre {
@@ -679,7 +664,7 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: Cambria,Georgia,serif; 
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
 
@@ -5361,7 +5346,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: Cambria,Georgia,serif; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5446,7 +5431,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-font-family: Cambria,Georgia,serif; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -8379,7 +8364,7 @@ button.bg-dark:focus {
     margin-left: auto !important; } }
 
 .text-monospace {
-  font-family: Cambria,Georgia,serif;  }
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important; }
 
 .text-justify {
   text-align: justify !important; }
@@ -8610,7 +8595,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  font-family: Cambria,Georgia,serif; 
+  font-family: "Poppins", Arial, sans-serif;
   font-size: 14px;
   line-height: 1.8;
   font-weight: normal;
@@ -8621,7 +8606,7 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #f8b739; }
+  color: #ffffff }
   a:hover, a:focus {
     text-decoration: none !important;
     outline: none !important;
@@ -8642,7 +8627,7 @@ h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: Cambria,Georgia,serif; 
+  font-family: "Poppins", Arial, sans-serif;
   color: #000; }
 
 .ftco-section {
@@ -8692,7 +8677,7 @@ h1, h2, h3, h4, h5,
 #sidebar {
   min-width: 300px;
   max-width: 300px;
-  background:#181e38;
+  background:#228db5;
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8701,8 +8686,8 @@ h1, h2, h3, h4, h5,
     margin-left: -300px; }
   #sidebar .logo {
     display: block;
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto; }
     #sidebar .logo span {
       display: block; }
@@ -8717,13 +8702,12 @@ h1, h2, h3, h4, h5,
     #sidebar ul li a {
       padding: 10px 0;
       display: block;
-      color: rgba(255, 255, 255, 0.8);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
       #sidebar ul li a:hover {
-        color: #f8b739; }
+        color: #f8b739;}
     #sidebar ul li.active > a {
       background: transparent;
-      color: #f8b739; }
+      color: #ffffff; }
   @media (max-width: 991.98px) {
     #sidebar {
       margin-left: -300px; }

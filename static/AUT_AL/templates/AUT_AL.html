@@ -1,0 +1,234 @@
+{% extends "header.html" %}
+{% block content %}
+{% load static %}
+<br>
+<br>
+<br>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+  <center>
+  <h3>
+  
+  </h3>
+  </center>
+</div>
+<div class="slideshow-container">
+
+  <!-- Full-width slides/quotes -->
+  {% for item in slid %}
+  <div class="mySlides">
+    <center>
+    <div style="
+    max-width: 400px;
+    min-width: 240px;
+    position: absolute;
+    background-color: #4b4b4ba1;
+    height: -webkit-fill-available;
+    padding: 25px;
+        margin-bottom: 20px;">
+      <h4>{{ item.title }}</h4>
+      <br>
+      <div style="
+    font-size: 99%;
+    color: #ffffff;
+    text-align: justify;">
+      {{ item.pragrapg }}
+      </div>
+      <br>
+      <a href="{{ item.link }}"><button  style="
+    width: 70px;
+    height: 29px;
+    font-size: 7pt;" type="button" class="btn btn-dark">read mor</button></a>
+    </div>
+    </center>
+    <div>
+    <img src="/static/images/{{ item.image }}"    id="fnfn">
+    </div>
+    
+  </div>
+  {% endfor %}
+  <!-- Next/prev buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<!-- Dots/bullets/indicators -->
+<div class="dot-container">
+  {% for item in slid %}
+  <span class="dot" onclick="currentSlide({{item.id}})"></span>
+  {% endfor %}
+</div>
+
+<br>
+
+
+
+
+
+
+<div _ngcontent-aqw-c51="" class="row blogs">
+<!--
+{% for item in news %}<div class="slideshow-container">
+  <center>
+  <h2>
+  News
+  </h2>
+  </center>
+</div>
+<div _ngcontent-aqw-c51="" class="col-lg-6 blog" style="cursor: pointer;" tabindex="0">
+  <div _ngcontent-aqw-c51="" class="image" style="background-image: url(&quot;/static/images/{{item.image}}&quot;); background-repeat: no-repeat; background-size: cover;height: 223px;">
+    <div _ngcontent-aqw-c51="" class="date" style=" background-color: #181e38;width: 69px;padding: 15px;">
+      <h6 _ngcontent-aqw-c51="">{{item.day}}</h6>
+      <h6 _ngcontent-aqw-c51="">{{item.month}}</h6>
+    </div>
+  </div>
+  <div _ngcontent-aqw-c51="" class="content">
+    <h4 _ngcontent-aqw-c51="">{{item.title}}</h4>
+    <p _ngcontent-aqw-c51="">{{item.pragrapg}}</p>
+  </div>
+</div>
+{% endfor %}
+-->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  #Home12345678{
+    color: #f8b739;
+  }
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding:10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+      margin-top: -8px
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+    position: unset;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+#fnfn{
+  width:100%;
+  min-height: 400px;
+
+
+}
+</style>
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+{% endblock %}

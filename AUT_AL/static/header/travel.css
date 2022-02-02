@@ -1,0 +1,15 @@
+.parent{
+    position: relative;
+}
+
+.ch1{
+    position: absolute;
+    left: 45%;
+    height: 4000px;
+
+}
+
+.ch2{
+    position: absolute;
+    left: 60%;
+}

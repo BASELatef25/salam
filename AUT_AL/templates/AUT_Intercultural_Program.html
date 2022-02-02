@@ -1,55 +1,63 @@
 {% extends "header.html" %}
 {% block content %}
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Salam Program</h2>
-                    <h3 class="section-subheading text-muted">Are You looking for a new experience in a unique intercultural program in the Middle East!</h3>
-                </div>
-                <div class="row">
-                {% for item in Portfolio %}
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal{{ item.id }}">
-                                
-                                <img class="img-fluid" style="  height: 160px; width: 100%;  " src="/static/images/{{item.image}}" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading"><center><h3>{{ item.title }}</h3></center></div>
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-                </div>
-            </div>
-
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-                {% for item in Portfolio %}
-                      <div class="portfolio-modal modal fade" id="portfolioModal{{ item.id }}" tabindex="-1" role="dialog" aria-hidden="true">
-                          <div class="modal-dialog">
-                              <div class="modal-content">
-                                  <div class="container">
-                                      <div class="row justify-content-center">
-                                          <div class="col-lg-8">
-                                              <div class="modal-body">
-                                                  <!-- Project details-->
-                                                  <h2 class="text-uppercase">{{ item.title }}</h2>
-                                                  
-                                                  <img class="img-fluid d-block mx-auto" src="/static/images/{{item.image}}" alt="...">
-                                                  <p>{{ item.text }}</p>
-                                                  
-                                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">Close</button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                {% endfor %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<div class="container">
+	<div id="tite"><center><h1>Salam Program</h1><h2>Why should you choose?</h2></center></div>
+    {% for item in data %}
+    <ul>
+      <li>
+        <h4>{{ item.pragrapg1 }}</h4>
+      </li>
+    </ul>
+    {%endfor%}
 
 
+</div>
+
+<style>
+
+  #tite{
+    border-radius: 5px;
+        padding:10px;
+        margin:10px;
+  }
+#baro{
+    justify-content: center;
+}
+.sidenav {
+        width:120px;
+  position: inherit;
+  z-index: 1;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color:  #e7b234;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+<hr style="margin-top:50px;">
 
  
 <div class=" container-lg" id="info1">
@@ -62,13 +70,13 @@
 <div class=" .container-fluid" id="info2">
 
 		
-	<h4 style="font-size:4vw;">{{item.title}}</h4>
+	<h4 style="font-size:25pt;">{{item.title}}</h4>
 	<hr>
-	<div class="row">
+	<div style="padding:15px;" class="row">
 		<div style="width:30%;" class="row">
-			<h4 style="font-size:3vw;width:20%;">{{item.subtitle}}</h4>
+			<h4 style="font-size:25pt;width:20%;">{{item.subtitle}}</h4>
 		</div>
-		<div style="width:70%;" class="row">
+		<div style="width:70%; " class="row">
 			<p id="text1">{{item.text}}</p>
 		</div>
 	</div>
@@ -91,6 +99,9 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 <style>
+ #Salam_Program12345678{
+    color: #f8b739;
+  }
 
 @import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Libre+Baskerville:ital@1&display=swap');
 
@@ -99,9 +110,10 @@
   width:100%;
 #text1{
   font-family: 'David Libre', serif;
-  font-size:16pt;
+  font-size:14pt;
 }
 
+ 
 
 }
 #info2{
@@ -114,7 +126,7 @@
 }
 #text1{
   font-family: 'David Libre', serif;
-  font-size:16pt;
+  font-size:14pt;
   text-align: justify;
   color: black;
 }
@@ -5742,7 +5754,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1200px) {
   .modal-xl {
-    max-width: 1140px;
+    max-width: 1200px;
   }
 }
 .modal-fullscreen {

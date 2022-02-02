@@ -1,7 +1,5 @@
 {% extends "header.html" %}{% load mathfilters %}
 {% block content %}
-
-
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Salam Program</h2>
@@ -30,24 +28,32 @@
                 {% for item in Portfolio %}
                       <div class="portfolio-modal modal fade" id="portfolioModal{{ item.id }}" tabindex="-1" role="dialog" aria-hidden="true">
                           <div class="modal-dialog">
+                          
                               <div class="modal-content">
-                                  <div class="container">
-                                      <div class="row justify-content-center">
-                                          <div class="col-lg-8">
+                              
+                                                  
+                                                  
+                                                  <div class="container-xl">
+                                                  <div class="row">
+                                                  <div style=";" class="col-lg-6 ">
+                                  <div class="container" style="margin-left: 0px;margin-right: 0px;">
+                                      <div class="row left-content">
+                                          <div class="">
                                               <div class="modal-body">
                                                   <!-- Project details-->
-                                                  <h2 class="text-uppercase">{{ item.title }}</h2>
+                                                  <h2 style="text-align: left;">{{ item.title }}</h2>
+                                                  <div style="width: fit-content;">
+                                                  <h3 style="text-align: left;"><span><pre style="    white-space: break-spaces;font-family: 'Poppins'">{{ item.text }}</pre></span></h3>
+                                                  </div>
                                                   
-                                                  <img style="
-    width: 90%;
-" class="img-fluid d-block mx-auto" src="/static/images/{{item.image}}" alt="...">
-                                                  <h5>{{ item.text }}</h5>
-                                                  
-                                                  <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">Close</button>
+                                                  <button class="btn btn-primary" data-bs-dismiss="modal" type="button">Close</button>
                                               </div>
-                                          </div>
+                                          </div>""
                                       </div>
-                                  </div>
+                                  </div></div>
+                                                  <div class="col-lg-6 col-sm-12 mb-12"><img style="width: 100%" src="/static/images/{{item.image}}" alt="..."></div>
+                                                  </div>
+                                                  </div>
                               </div>
                           </div>
                       </div>
@@ -58,7 +64,8 @@
 
 <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Popular tourism places</h2>
+                    <h2 class="section-heading ">Popular tourism places</h2>
+                    <h4 class="section-heading ">you will visit it with salam</h4>
                 </div>
                 <br>
                 <ul class="timeline">
@@ -66,24 +73,25 @@
                 {% for item in images %}
                     {% if item.id|divisibleby:2  %}
                         <li>
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="/static/images/{{item.image}}" alt="..."></div>
+                            <div style="margin-left:50px;" class="timeline-image"><img class="rounded-circle img-fluid" src="/static/images/{{item.image}}" alt="..."></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <p>{{item.date}}</p>
-                                    <h4 class="subheading">{{item.title}}</h4>
+                                    <p style="">{{item.date}}</p>
+                                    <h3 style="text-align: justify;" class="subheading">{{item.title}}</h3>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">{{item.text}}</p></div>
+                                <div  style="text-align: justify;"  class="timeline-body"><p class="text-muted">{{item.text}}</p></div>
                             </div>
                         </li>
                     {% else %}
                         <li class="timeline-inverted">
-                            <div class="timeline-image"><img class="rounded-circle img-fluid" src="/static/images/{{item.image}}" alt="..."></div>
+                            <div style="margin-left
+                            :-350px;" class="timeline-image"><img class="rounded-circle img-fluid" src="/static/images/{{item.image}}" alt="..."></div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <p>{{item.date}}</p>
-                                    <h4 class="subheading">{{item.title}}</h4>
+                                    <h3  style="text-align: justify;"  class="subheading">{{item.title}}</h3>
                                 </div>
-                                <div class="timeline-body"><p class="text-muted">{{item.text}}</p></div>
+                                <div style="text-align: justify;"  class="timeline-body"><p class="text-muted">{{item.text}}</p></div>
                             </div>
                         </li>
                     {% endif %} 
@@ -118,6 +126,10 @@
 
 
             <style>
+
+  #about12345678{
+    color: #f8b739;
+  }
             @charset "UTF-8";
 /*!
 * Start Bootstrap - Agency v7.0.10 (https://startbootstrap.com/theme/agency)
@@ -11620,7 +11632,6 @@ header.masthead .masthead-heading {
 .portfolio-modal .modal-content {
   padding-top: 6rem;
   padding-bottom: 6rem;
-  text-align: center;
 }
 .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
   font-size: 3rem;
@@ -11765,8 +11776,8 @@ header.masthead .masthead-heading {
   }
   .timeline > li .timeline-image {
     left: 50%;
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     margin-left: -50px;
   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
@@ -11788,8 +11799,8 @@ header.masthead .masthead-heading {
     padding: 0 20px 20px;
   }
   .timeline > li .timeline-image {
-    width: 150px;
-    height: 150px;
+    width: 300px;
+    height: 300px;
     margin-left: -75px;
   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
@@ -11809,9 +11820,10 @@ header.masthead .masthead-heading {
     padding: 0 20px 20px 100px;
   }
   .timeline > li .timeline-image {
-    width: 170px;
-    height: 170px;
-    margin-left: -85px;
+    width: 300px;
+    height: 300px;
+    
+    margin-left: -350px;
   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
     margin-top: 40px;
@@ -11897,5 +11909,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+/*bahaa
+@media(max-width:450px;){
+    .timeline-image{
+      visible: ;
+    }
+}*/
             </style>
 {% endblock %}

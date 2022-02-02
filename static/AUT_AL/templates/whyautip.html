@@ -1,0 +1,106 @@
+{% extends "header.html" %}
+{% block content %}
+{% load static %}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<div class="container">
+	<div id="tite"><center><h1>Salam Program</h1><h2>Why should you choose?</h2></center></div>
+    <div class="row">
+        <div id="baro" class="row">
+            {% for item in data %}
+                <div class="sidenav">
+                <center><a id="x{{item.id}}" href="#f">{{item.title}}</a></center>
+                </div>
+            {% endfor %}
+        </div>
+        <div id="tite" class="col">
+            <h3 id="s1"></h3>
+            <p id="s2"></p>
+            <p id="s3"></p>
+            <img id="s4" src="" style="width:100%;">  
+        </div> 
+    </div>
+
+
+
+</div>
+
+
+
+<script>
+var jq = $.noConflict();
+jq(document).ready(function(){
+    {% for item in data %}
+             jq("#x{{item.id}}").click(function(){
+            jq("#s1").text("{{item.title}}");
+            jq("#s2").text("{{item.pragrapg1}}");
+            jq("#s3").text("{{item.pragrapg2}}");
+        });
+    {% endfor %}
+  
+});
+</script>
+<script>
+$(document).ready(function(){
+{% for item in data %}
+
+
+    $("#x{{item.id}}").click(function(){
+        // Change src attribute of image
+        $("#s4").attr("src", "/static/images/{{item.image}}/");
+    }); 
+
+{% endfor %}
+  
+});
+</script>
+
+
+</head>
+
+
+
+<style>
+
+	#tite{
+		border-radius: 5px;
+        padding:10px;
+        margin:10px;
+	}
+#baro{
+    justify-content: center;
+}
+.sidenav {
+        width:120px;
+  position: inherit;
+  z-index: 1;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color:  #e7b234;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+{% endblock %}

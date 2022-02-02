@@ -3,6 +3,8 @@ from django.shortcuts import redirect, render
 from django.urls.resolvers import CheckURLMixin
 from . models import *
 # Create your views here.
+def Popular_tourism_places (request):
+    return render(request,'Popular_tourism_places.html')
 def home (request):
     parameter=homeslids.objects.all()
     news1=news.objects.all()
@@ -11,7 +13,8 @@ def home (request):
 def AUT_Intercultural_Program (request):
     add=AUTIP.objects.all()
     add2=Portfolio_Modals.objects.all()
-    context={'adds':add,'Portfolio':add2}
+    add3=why.objects.all()
+    context={'adds':add,'Portfolio':add2,'data':add3}
     return render(request,'AUT_Intercultural_Program.html',context)
 def About (request):
     img=images.objects.all()
@@ -100,6 +103,7 @@ def deleteslid (request,id):
 #dSalamProgram
 
 def dSalamProgram (request):
+    parameter=AUTIP.objects.all()
     if request.method=='POST':
         Course = AUTIP.objects.create(
             title = request.POST["Title"],
@@ -107,4 +111,9 @@ def dSalamProgram (request):
             text = request.POST["Text"],
         )
         Course.save()
-    return render(request,'dSalamProgram.html')
+    return render(request,'dSalamProgram.html',{'course':parameter})
+
+def deletecourse (request,id):
+    qdelete=AUTIP.objects.get(id=id)
+    qdelete.delete()
+    return redirect('/123/dashbord/dSalamProgram/')
