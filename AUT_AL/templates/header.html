@@ -21,101 +21,45 @@
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar" >
-				<div class="p-4 pt-5" style=" position: sticky;z-index: 0;top: 0;    padding-top: 90px !important; ">
-		  		<a href="/" class="img logo rounded-circle mb-5" style="background-image: url({% static 'header/salam.png' %});"></a>
-                <center>
-                    <p style="margin-top: -75px;">
-                       Salam Program
-                    </p>
-                </center>
-	        <ul class="list-unstyled components mb-5">
-
-              <li  >
-                  <a id="Home12345678" href="/">Home</a>
-              </li>
-              <li>
-              <a  id="Salam_Program12345678" href="/Salam_Program">Salam Program</a>
-              </li>
-              <li>
-              <a  id="apply12345678" id="" href="/apply">Apply Now</a>
-              </li>
-              <li>
-              <a  id="about12345678" href="/about">About</a>
-              </li>
-              <li>
-              <a  id="Popular_tourism_places12345678" href="/Popular_tourism_places">Popular_tourism_places</a>
-              </li>
-              <!--
-	          <li class="active">
-	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Language</a>
-	            <ul class="collapse list-unstyled" id="homeSubmenu">
-                <li>
-                    <a href=#>English</a>
-                </li>
-                <li><a href="#">العربية</a>
-                </li>
-	            </ul>
-	          </li>
-            -->
-            <!--
-              <li>
-              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages In Social Media</a>
-              <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="https://www.facebook.com/AqabaUni">Facebook</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/aqabauni?lang=en">Twitter</a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/aqabauni/?fbclid=IwAR1Dx6-yiQxgfztOHIzeKqg0-gDjFaIy38r5peZqPFN4Md68vflzIRokRiM">Instagram</a>
-                </li>
-              </ul>
-              </li>
-              -->
-              <!--ssss-->
-              <br>
-              <center>
-               <div class="icons">
-              <a id="rtbr" href="https://www.facebook.com/AqabaUni"><i class="fa fa-facebook"></i></a>
-              <a id="rtbr" href="https://twitter.com/aqabauni?lang=en"><i class="fa fa-twitter"></i></a>
-              <a id="rtbr" href="https://www.instagram.com/aqabauni/?fbclid=IwAR1Dx6-yiQxgfztOHIzeKqg0-gDjFaIy38r5peZqPFN4Md68vflzIRokRiM"><i class="fa fa-instagram"></i></a>
-    </div>
-    </center>
-
-	        </ul>
-
-	      </div>
-    	</nav>
 
         <!-- Page Content  -->
       <div id="content" class="">
-        <div id="background-navbar">
+        <div>
           
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="
+        <!--<nav class="navbar navbar-expand-lg navbar-light bg-light" style="
     top: 0;
     position: fixed;
     right: 0;
     left: 0;
     z-index: 1030;
+    background-color: #f8f9fa00 !important;
  ">
           <div class="container-fluid" id="container-fluid">
 
-            <button type="button" id="sidebarCollapse" class="btn btn-primary">
-              <i class="fa fa-bars"></i>
-              <span class="sr-only">Toggle Menu</span>
-            </button>
             <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent" style="">
+            <a href="/"><img src="{% static 'header/salam.png' %}" style="width:150px;height:150px;"><h4 style="color:white;"></a>
               <ul id="navitems111" class="nav navbar-nav">
                 <li id="headeritems" class="nav-item">
-                    <a class="nav-link" href="/Salam_Program" >Why Salam</a>                </li>
+                    <a class="nav-link" href="/Salam_Program" >Salam Program</a>               
+                </li>
+                <li id="headeritems" class="nav-item">
+                    <a class="nav-link" href="/apply" >Apply Now</a>               
+                </li>
+                <li id="headeritems" class="nav-item">
+                    <a class="nav-link" href="/about" >About</a>               
+                </li>
+                <li id="headeritems" class="nav-item">
+                    <a class="nav-link" href="/Salam_Program" >Popular_tourism_places</a>               
+                </li>
+                <li id="headeritems" class="nav-item">
+                    <a class="nav-link" href="/Salam_Program" >Why Salam</a>               
+                </li>
                 <li id="headeritems" class="nav-item">
                     <a class="nav-link" href="/academic">Academic</a>
                 </li>
@@ -128,19 +72,259 @@
               </ul>
             </div>
           </div>
-        </nav>
+        </nav>-->
+        
+
+
+
+<!--
+
+BootStrap NavBar Example Three - Social Media Icons
+ //
+1. Replaced the ugly toggle with angle
+2. Used hover only for large screen and above
+3. You can add resize function if you want in javascript
+4. SlideIn / SlideUp can be replaced with FadeIn /FadeUp
+5. Delay on leaving mouse is applied to ensure the hover actions are not jittery.
+//
+-->
+
+
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
+<div  class="container"> <a class="navbar-brand d-flex align-items-center" href="/">
+<svg width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<a href="/"><img src="{% static 'header/salam.png' %}" style="width:100px;height:100px;"><h1>Salam</h1></a>
+</svg>
+</a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+
+<div class="collapse navbar-collapse" id="navbar4">
+<ul class="navbar-nav mr-auto pl-lg-4">
+  <!--why-->
+<li class="nav-item px-lg-2 dropdown d-menu">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="d-inline-block d-lg-none icon-width">
+<i class="far fa-caret-square-down">
+</i>
+</span><h4>Why Salam<svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg></h4>
+
+</a>
+<div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+<a class="dropdown-item" href="/Overview"><p>Overview</p></a>
+<a class="dropdown-item" href="/Our-campus"><p>Our-campus</p></a>
+<a class="dropdown-item" href="/academic"><p>Staff</p></a>
+</div>
+</li>
+<!--Academic-->
+<li class="nav-item px-lg-2 dropdown d-menu">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="d-inline-block d-lg-none icon-width">
+<i class="far fa-caret-square-down">
+</i>
+</span><h4>Academic<svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg></h4>
+
+</a>
+<div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+<a class="dropdown-item" href="/our_programs"><p>Our programs</p></a>
+<a class="dropdown-item" href="/supplementary_courses_and_activities"><p>Supplementary-Courses-And-Activities</p></a>
+<a class="dropdown-item" href="/Private_Tutoring"><p>Private Tutoring</p></a>
+</div>
+</li>
+
+<!--Admission Overview-->
+<li class="nav-item px-lg-2 dropdown d-menu">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="d-inline-block d-lg-none icon-width">
+<i class="far fa-caret-square-down">
+</i>
+</span><h4>Admission<svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg></h4>
+
+</a>
+<div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+<a class="dropdown-item" href="/Admission_Overview"><p>Admission Overview</p></a>
+<a class="dropdown-item" href="/apply"><p>Apply Now</p></a>
+<a class="dropdown-item" href="/Academic_Calendar"><p>Academic Calendar</p></a>
+<a class="dropdown-item" href="/Tuition"><p>Tuition</p></a>
+<a class="dropdown-item" href="/Payment"><p>Payment</p></a>
+</div>
+</li>
+<!--Students life-->
+<li class="nav-item px-lg-2 dropdown d-menu">
+<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="d-inline-block d-lg-none icon-width">
+<i class="far fa-caret-square-down">
+</i>
+</span><h4>Student life<svg  id="arrow" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg></h4>
+
+</a>
+<div class="dropdown-menu shadow-sm sm-menu" aria-labelledby="dropdown01">
+<a class="dropdown-item" href="/Safty"><p>Safety</p></a>
+<a class="dropdown-item" href="/Travel_and_Visas"><p>Travel and Visas</p></a>
+<a class="dropdown-item" href="/Getting_Around_in_Aqaba"><p>Getting Around in Aqaba</p></a>
+<a class="dropdown-item" href="/Recreation_an_Activities"><p>Recreation and Activities</p></a>
+<a class="dropdown-item" href="/Health_and_Wellness"><p>Health and Wellness</p></a>
+</div>
+</li>
+<li class="nav-item px-lg-2"> <a class="nav-link" href="#"><span class="d-inline-block d-lg-none icon-width"><i class="far fa-envelope"></i></span><h4>Blog</h4></a> </li>
+<!--opt********************************
+</ul>
+<ul class="navbar-nav ml-auto mt-3 mt-lg-0">
+<li class="nav-item"> <a class="nav-link" href="#">
+  <i class="fab fa-twitter"></i><span class="d-lg-none ml-3">Twitter</span>
+</a> </li>
+<li class="nav-item"> <a class="nav-link" href="#">
+<i class="fab fa-facebook"></i><span class="d-lg-none ml-3">Facebook</span>
+</a> </li>
+<li class="nav-item"> <a class="nav-link" href="#">
+<i class="fab fa-instagram"></i><span class="d-lg-none ml-3">Instagram</span>
+</a> </li>
+  <li class="nav-item"> <a class="nav-link" href="#">
+<i class="fab fa-linkedin"></i><span class="d-lg-none ml-3">Linkedin</span>
+</a> </li>
+--></ul>
+</div>
+</div>
+</nav>
+
+<!--The html below this line is for display purpose only-->
+
+<div  id="background-navbar" class="py-5 text-center text-white bg-primary">
+<div class="container py-5">
+<div class="row py-5">
+<div class="mx-auto col-lg-10">
+  <h1 class="display-4 mb-4 "> </h1>
+  <p style="
+    color: black;
+    position: fixed;
+    left: 0;
+    font-size: xx-large;
+    text-align: left;"><!--<img style="    width: 321px;" src="{% static 'header/hedtext.png' %}">--></p> 
+</div>
+</div>
+</div>
+</div>
 
         <div class="container-lg">
                                   <!--imort your temp-->
                                         {% block content %}
                                         {% endblock %}
+                                        <br>
+                                        <br>
 
 
-                              <!--footer-->
         
-        </div>
-        <footer class="footer">
-  <div class="footer-left col-md-4 col-sm-6">
+        </div>                      
+        <div style="position: fixed; bottom:300px; right: 5px;">
+        <a href="https://web.whatsapp.com/send?phone=962796954212&text=">
+            <img width="50px" src="https://wafid.co/wp-content/plugins/click-to-chat-for-whatsapp/./assets/img/whatsapp-icon-square.svg">
+        </a>
+    </div>
+        
+        
+        
+<!--******************************************************************************************************************************************************************footer-->
+
+<br>
+<main class="site-wrapper">
+  <div class="pt-table desktop-768">
+    <div class="pt-tablecell page-home relative" >
+
+                    <div class="container">
+                        <div class="row">
+                            <div style="" id="ccv" class="col-xs-12 col-md-offset-1  col-lg-offset-2">
+                                
+
+                                <div class="hexagon-menu clear">
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="/" class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title">Home</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#228db5"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="/contact_us"  class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                                </span>
+                                                <span class="title">Contact Us</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#228db5"></path></svg>
+                                        </a>
+                                    </div>
+                                    <div class="hexagon-item">
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="hex-item">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <a href="/apply"  class="hex-content">
+                                            <span class="hex-content-inner">
+                                                <span class="icon">
+                                                    <i class="fa fa-braille"></i>
+                                                </span>
+                                                <span class="title">Apply Now</span>
+                                            </span>
+                                            <svg viewBox="0 0 173.20508075688772 200" height="200" width="174" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M86.60254037844386 0L173.20508075688772 50L173.20508075688772 150L86.60254037844386 200L0 150L0 50Z" fill="#228db5"></path></svg>
+                                        </a>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  </main>
+
+
+
+
+
+
+<!--******************************************************************************************************************************************************************footer-->
+
+        <footer style="padding-left: 60PX;padding-right: 60PX;" class="footer">
+  <div  class="footer-left col-md-4 col-sm-6">
     <p class="about">
       <h3 style="color:white;"> Salam Program</h3>
     </p>
@@ -184,10 +368,19 @@
   </div>
 </footer>
 <style>
+body{
+  margin-right:20px;
+}
+
+
+
+
+
 #tdkggggkgh{
   margin: 0;  position: absolute;bottom: 0%;  padding-left: 18px;
 }
 .footer {
+    position: absolute;
   background-color:#228db5;
   width: 100%;
   text-align: left;
@@ -436,13 +629,35 @@
 <style type="text/css">
 
     #background-navbar{
-        min-height: inherit;
+        min-height: 750px;
         background-image: url({% static 'header/hedhome.jpg' %});
         background-position: center;
         background-size: cover;
         background-repeat:no-repeat;
         align-items: flex-start;
         animation: slides 50s ease-in-out infinite;
+        
+    }
+
+    @keyframes slides{
+        0%,100%{
+            background-image: url({% static 'header/hedhome.jpg' %});
+        }
+        20%{
+            background-image: url({% static 'header/1.jpg' %});
+        }
+        40%{
+            background-image: url{% static 'header/2.jpg' %});
+        }
+        60%{
+            background-image: url({% static 'header/3.jpg' %});
+        }
+        70%{
+            background-image: url({% static 'header/4.jpg' %});
+        }
+
+
+
     }
     #headeritems{
         background-color:#f8b73952;
@@ -461,10 +676,6 @@
         padding-right: 10px;
         border-radius: 5px;
 
-    }
-    #navitems111{
-        padding-left: 40px;
-        margin-left: -5px;
     }
 :root {
   --blue: #007bff;
@@ -8750,4 +8961,781 @@ a[data-toggle="collapse"] {
 
 
 
+</style>
+
+
+<style>
+
+
+body {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  overflow-x:hidden;
+  color: #ababab; }
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+  
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #f90a23;
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.heading-page
+{
+      text-transform: uppercase;
+    font-size: 43px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    color: white;
+}
+a {
+  color: inherit;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  a:hover, a:focus {
+    color: #ababab;
+    text-decoration: none;
+    outline: 0 none; }
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  line-height: 1.3; }
+
+p {
+  margin-bottom: 20px; }
+  p:last-child {
+    margin-bottom: 0; }
+
+/*
+ * Selection color
+ */
+::-moz-selection {
+  background-color: #FA6862;
+  color: #fff; }
+
+::selection {
+  background-color: #FA6862;
+  color: #fff; }
+
+/*
+ *  Reset bootstrap's default style
+ */
+.form-control::-webkit-input-placeholder,
+::-webkit-input-placeholder {
+  opacity: 1;
+  color: inherit; }
+
+.form-control:-moz-placeholder,
+:-moz-placeholder {
+  /* Firefox 18- */
+  opacity: 1;
+  color: inherit; }
+
+.form-control::-moz-placeholder,
+::-moz-placeholder {
+  /* Firefox 19+ */
+  opacity: 1;
+  color: inherit; }
+
+.form-control:-ms-input-placeholder,
+:-ms-input-placeholder {
+  opacity: 1;
+  color: inherit; }
+
+button, input, select,
+textarea, label {
+  font-weight: 400; }
+
+.btn {
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s; }
+  .btn:hover, .btn:focus, .btn:active:focus {
+    outline: 0 none; }
+
+.btn-primary {
+  background-color: #FA6862;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  height: 48px;
+  line-height: 50px;
+  padding: 0 42px;
+  text-transform: uppercase; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
+    background-color: #f9423a; }
+
+.btn-border {
+  border: 1px solid #d7d8db;
+  display: inline-block;
+  padding: 7px; }
+
+/*
+ *  CSS Helper Class
+ */
+.clear:before, .clear:after {
+  content: " ";
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+.pt-table {
+  display: table;
+  width: 100%;}
+
+.pt-tablecell {
+  display: table-cell;
+  vertical-align: middle; }
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+.relative {
+  position: relative; }
+
+.primary,
+.link:hover {
+  color: #FA6862; }
+
+.no-gutter {
+  margin-left: 0;
+  margin-right: 0; }
+  .no-gutter > [class^="col-"] {
+    padding-left: 0;
+    padding-right: 0; }
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-middle {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center; }
+
+.space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between; }
+
+.nicescroll-cursors {
+  background: #FA6862 !important; }
+
+.preloader {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .preloader.active.hidden {
+    display: none; }
+
+.loading-mask {
+  background-color: #FA6862;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20%;
+  -webkit-transition: all 0.6s cubic-bezier(0.61, 0, 0.6, 1) 0s;
+  -moz-transition: all 0.6s cubic-bezier(0.61, 0, 0.6, 1) 0s;
+  -o-transition: all 0.6s cubic-bezier(0.61, 0, 0.6, 1) 0s;
+  transition: all 0.6s cubic-bezier(0.61, 0, 0.6, 1) 0s; }
+  .loading-mask:nth-child(2) {
+    left: 20%;
+    -webkit-transition-delay: 0.1s;
+    -moz-transition-delay: 0.1s;
+    -o-transition-delay: 0.1s;
+    transition-delay: 0.1s; }
+  .loading-mask:nth-child(3) {
+    left: 40%;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s; }
+  .loading-mask:nth-child(4) {
+    left: 60%;
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    transition-delay: 0.3s; }
+  .loading-mask:nth-child(5) {
+    left: 80%;
+    -webkit-transition-delay: 0.4s;
+    -moz-transition-delay: 0.4s;
+    -o-transition-delay: 0.4s;
+    transition-delay: 0.4s; }
+
+.preloader.active.done {
+  z-index: 0; }
+
+.preloader.active .loading-mask {
+  width: 0; }
+
+/*------------------------------------------------
+	Start Styling
+-------------------------------------------------*/
+.mt20{margin-top:20px;}
+
+.page-close {
+  font-size: 30px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  z-index: 100; }
+
+.page-title {
+  margin-bottom: 75px; }
+  .page-title img {
+    margin-bottom: 20px; }
+  .page-title h2 {
+    font-size: 68px;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 0;
+    font-weight: 900;
+    text-transform: uppercase; }
+  .page-title p {
+    font-size: 16px; }
+  .page-title .title-bg {
+    color: rgba(30, 37, 48, 0.07);
+    font-size: 158px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: 0.7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: -1;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+.section-title {
+  margin-bottom: 20px; }
+  .section-title h3 {
+    display: inline-block;
+    position: relative; }
+    .section-title h3::before, .section-title h3::after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      bottom: 8px;
+      left: -webkit-calc(100% + 14px);
+      left: -moz-calc(100% + 14px);
+      left: calc(100% + 14px); }
+    .section-title h3::before {
+      background-color: #228db5;
+      width: 96px;
+      bottom: 14px; }
+    .section-title h3::after {
+      background-color: #FA6862;
+      width: 73px; }
+  .section-title.light h3 {
+    color: #fff; }
+    .section-title.light h3::before {
+      background-color: #fff; }
+
+.page-nav {
+  bottom: 40px;
+  left: 0;
+  position: absolute;
+  right: 0; }
+  .page-nav span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 0.9;
+    text-transform: uppercase; }
+
+/*------------------------------------------------
+    Home Page
+-------------------------------------------------*/
+
+.hexagon-item:first-child {
+    margin-left: 0;
+}
+
+.page-home {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  vertical-align: middle; }
+
+
+.page-home .overlay {
+    background-color: rgba(14, 17, 24, 0.97);
+}
+
+/* End of container */
+.hexagon-item {
+  cursor: pointer;
+  width: 200px;
+  height: 173.20508px;
+  float: left;
+  margin-left: -29px;
+  z-index: 0;
+  position: relative;
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  transform: rotate(30deg); }
+  .hexagon-item:first-child {
+    margin-left: 0; }
+  .hexagon-item:hover {
+    z-index: 1; }
+    .hexagon-item:hover .hex-item:last-child {
+      opacity: 1;
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3);
+      transform: scale(1.3); }
+    .hexagon-item:hover .hex-item:first-child {
+      opacity: 1;
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+      transform: scale(1.2); }
+      .hexagon-item:hover .hex-item:first-child div:before,
+      .hexagon-item:hover .hex-item:first-child div:after {
+        height: 5px; }
+    .hexagon-item:hover .hex-item div::before,
+    .hexagon-item:hover .hex-item div::after {
+      background-color: #ffa800; }
+    .hexagon-item:hover .hex-content svg {
+      -webkit-transform: scale(0.97);
+      -moz-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+      -o-transform: scale(0.97);
+      transform: scale(0.97); }
+
+.page-home .hexagon-item:nth-last-child(1),
+.page-home .hexagon-item:nth-last-child(2),
+.page-home .hexagon-item:nth-last-child(3) {
+  -webkit-transform: rotate(30deg) translate(87px, -80px);
+  -moz-transform: rotate(30deg) translate(87px, -80px);
+  -ms-transform: rotate(30deg) translate(87px, -80px);
+  -o-transform: rotate(30deg) translate(87px, -80px);
+  transform: rotate(30deg) translate(87px, -80px); }
+
+.hex-item {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 100px;
+  height: 173.20508px; }
+  .hex-item:first-child {
+    z-index: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  .hex-item:last-child {
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1; }
+  .hex-item div {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 173.20508px;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center; }
+    .hex-item div::before, .hex-item div::after {
+      background-color:#228db5;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+      -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+      -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
+    .hex-item div:before {
+      top: 0; }
+    .hex-item div:after {
+      bottom: 0; }
+    .hex-item div:nth-child(1) {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg); }
+    .hex-item div:nth-child(2) {
+      -webkit-transform: rotate(60deg);
+      -moz-transform: rotate(60deg);
+      -ms-transform: rotate(60deg);
+      -o-transform: rotate(60deg);
+      transform: rotate(60deg); }
+    .hex-item div:nth-child(3) {
+      -webkit-transform: rotate(120deg);
+      -moz-transform: rotate(120deg);
+      -ms-transform: rotate(120deg);
+      -o-transform: rotate(120deg);
+      transform: rotate(120deg); }
+
+.hex-content {
+  color: #fff;
+  display: block;
+  height: 180px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  transform: rotate(-30deg);
+  width: 156px; }
+  .hex-content .hex-content-inner {
+    left: 50%;
+    margin: -3px 0 0 2px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .hex-content .icon {
+    display: block;
+    font-size: 36px;
+    line-height: 30px;
+    margin-bottom: 11px; }
+  .hex-content .title {
+    color:#ffffff;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: uppercase; }
+  .hex-content svg {
+    left: -7px;
+    position: absolute;
+    top: -13px;
+    transform: scale(0.87);
+    z-index: -1;
+    -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s; }
+  .hex-content:hover {
+    color: #fff; }
+
+.page-home .hexagon-item:nth-last-child(1), .page-home .hexagon-item:nth-last-child(2), .page-home .hexagon-item:nth-last-child(3) {
+    -webkit-transform: rotate(30deg) translate(87px, -80px);
+    -moz-transform: rotate(30deg) translate(87px, -80px);
+    -ms-transform: rotate(30deg) translate(87px, -80px);
+    -o-transform: rotate(30deg) translate(87px, -80px);
+    transform: rotate(30deg) translate(87px, -80px);
+}
+/*------------------------------------------------
+    Welcome Page
+-------------------------------------------------*/
+.author-image-large {
+  position: absolute;
+  right: 0;
+  top: 0; }
+  .author-image-large img {
+    height: -webkit-calc(100vh - 4px);
+    height: -moz-calc(100vh - 4px);
+    height: calc(100vh - 4px); }
+
+
+@media (min-width: 1200px)
+{
+.col-lg-offset-2 {
+    
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333%;
+    flex: 8 0 83.33333%;
+    max-width: 79.33333%;
+    margin-left: 16.66666667%;
+}
+}
+
+@media (max-width: 767px)
+{
+  #ccv{
+    
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 114.33333%;
+    max-width: 142.33333%;
+  }
+}
+@media (min-width: 1200px)
+{
+.col-lg-8 {
+    width: 66.66666667%;
+}
+}
+
+.hexagon-item:first-child {
+    margin-left: 0;
+}
+
+
+
+
+.hexagon-item:hover .icon i
+{
+  color:#ffa800;
+  transition:0.6s;
+  
+}
+
+
+.hexagon-item:hover .title
+{
+  -webkit-animation: focus-in-contract 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-contract 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/***************************/
+
+@-webkit-keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract {
+  0% {
+    letter-spacing: 1em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 767px)
+{
+  
+#ccv{
+   
+    
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 114.33333%;
+    max-width: 142.33333%;
+}
+.hexagon-item {
+    float: none;
+    margin: 0 auto 50px;
+}
+  .hexagon-item:first-child {
+    margin-left: auto;
+}
+  
+  .page-home .hexagon-item:nth-last-child(1), .page-home .hexagon-item:nth-last-child(2), .page-home .hexagon-item:nth-last-child(3) {
+    -webkit-transform: rotate(30deg) translate(0px, 0px);
+    -moz-transform: rotate(30deg) translate(0px, 0px);
+    -ms-transform: rotate(30deg) translate(0px, 0px);
+    -o-transform: rotate(30deg) translate(0px, 0px);
+    transform: rotate(30deg) translate(0px, 0px);
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding:10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+      margin-top: -8px
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 20px;
+    position: unset;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+
+
+
+#fnfn{
+  width:100%;
+  min-height: 400px;
+
+
+}
+</style>
+
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+$(document).ready(function () {
+if ($(window).width() > 991){
+$('.navbar-light .d-menu').hover(function () {
+        $(this).find('.sm-menu').first().stop(true, true).slideDown(150);
+    }, function () {
+        $(this).find('.sm-menu').first().stop(true, true).delay(120).slideUp(100);
+    });
+    }
+});
+</script>
+<<!--    nav    -->
+<style>
+.dropdown-toggle::after {
+    display: none;
+  }
+.text-decoration-none{
+  text-decoration: none!important;
+}
+/* Font Awesome Icons have variable width. Added fixed width to fix that.*/
+.icon-width { width: 2rem;}
 </style>

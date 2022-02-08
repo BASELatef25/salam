@@ -2,10 +2,71 @@ from django.http import response
 from django.shortcuts import redirect, render
 from django.urls.resolvers import CheckURLMixin
 from . models import *
+
+
+
+
+
+
+
+
+#Admission************************
+def Tuition (request):
+    return render(request,'Tuition.html')
+def Admission_Overview (request):
+    return render(request,'Admission_Overview.html')
+def Academic_Calendar (request):
+    return render(request,'academemic_Calender.html')
+
+def Apply2 (request):
+    return render(request,'Apply_Now2.html')
+def Apply3 (request):
+    return render(request,'Apply_Now3.html')
+def Apply4 (request):
+    return render(request,'Apply_Now4.html')
+def Apply (request):
+    return render(request,'Apply_Now.html')
+def Payment (request):
+    return render(request,'Payment.html')
+
+
+
+
+
+
+#why salam************************
+def Overview (request):
+    return render(request,'Overview.html')
+def Our_campus (request):
+    parameter=homeslids.objects.all()
+    return render(request,'Our-campus.html',{'slid':parameter})
+def staff (request):
+    return render(request,'staff.html')
+#accademoic************************
+def our_programs (request):
+    return render(request,'our_programs.html')
+def supplementary_courses_and_activities (request):
+    return render(request,'supplementary_courses_and_activities.html')
+def Private_Tutoring (request):
+    return render(request,'Private_Tutoring.html')
 # Create your views here.
 def Popular_tourism_places (request):
     return render(request,'Popular_tourism_places.html')
+
+def contact_us (request):
+    return render(request,'contact_us.html')
+def Safty (request):
+    return render(request,'Safty.html')
+def Travel_and_Visas (request):
+    return render(request,'Travel_and_Visas.html')
+#home************************************
 def home (request):
+    return render(request,'Getting_Around_in_Aqaba.html')
+def Recreation_an_Activities (request):
+    return render(request,'Recreation_an_Activities.html')
+def Health_and_Wellness (request):
+    return render(request,'Health_and_Wellness.html')
+def Getting_Around_in_Aqaba (request):
     parameter=homeslids.objects.all()
     news1=news.objects.all()
     context={'slid':parameter,'news':news1}
@@ -21,7 +82,7 @@ def About (request):
     add2=Portfolio_Modals.objects.all()
     context={'images':img,'Portfolio':add2}
     return render(request,'About.html',context)
-def Apply (request):
+
     if request.method=='POST':
         Regist = Registration.objects.create(
             fname = request.POST["fname"],

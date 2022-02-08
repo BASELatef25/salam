@@ -1,18 +1,59 @@
 {% extends "header.html" %}
 {% block content %}
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<div class="container">
-	<div id="tite"><center><h1>Salam Program</h1><h2>Why should you choose?</h2></center></div>
-    {% for item in data %}
-    <ul>
-      <li>
-        <h4>{{ item.pragrapg1 }}</h4>
-      </li>
-    </ul>
-    {%endfor%}
 
+<br>
+<br>
+<div class="container-fluid">
+<div class="row">
+<div style="width:70%;" class="col-lg-9">
+
+ 
+<div class=" container-lg" id="info1">
+  <center><h1>Course level.</h1></center>
+</div>
+<br>
+
+{% for item in adds %}
+
+<div>
+
+    
+  <h4 style="font-size:25pt;">{{item.title}}</h4>
+  <hr>
+  <div style="padding:15px;" class="row">
+    <div style="width:100%; " class="row">
+      <p id="text1">{{item.text}}</p>
+    </div>
+  </div>
+  
 
 </div>
+<br>
+<i><h4 style="">Duration</h4></i>
+<i><p>{{item.subtitle}} contact/classroom hours 
+</p></i>
+
+
+
+{% endfor %}
+
+</div>
+<div style="width:30%;" class="col-lg-3">
+    <br>
+    <br>
+
+<ul>
+    <li><a class="dropdown-item" href="/our_programs"><p>Our programs</p></a></li>
+    <li><a class="dropdown-item" href="/supplementary_courses_and_activities"><p>Supplementary-Courses-And-Activities</p></a></li>
+    <li><a class="dropdown-item" href="/Private_Tutoring"><p>Private Tutoring</p></a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<br>
 
 <style>
 
@@ -57,38 +98,6 @@
 }
 </style>
 
-<hr style="margin-top:50px;">
-
- 
-<div class=" container-lg" id="info1">
-	<center><h1>Course level.</h1></center>
-</div>
-<br>
-
-{% for item in adds %}
-
-<div class=" .container-fluid" id="info2">
-
-		
-	<h4 style="font-size:25pt;">{{item.title}}</h4>
-	<hr>
-	<div style="padding:15px;" class="row">
-		<div style="width:30%;" class="row">
-			<h4 style="font-size:25pt;width:20%;">{{item.subtitle}}</h4>
-		</div>
-		<div style="width:70%; " class="row">
-			<p id="text1">{{item.text}}</p>
-		</div>
-	</div>
-	
-
-</div>
-<br>
-
-
-
-{% endfor %}
-
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -99,6 +108,17 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 <style>
+
+    p{
+        
+    font-size: 20px;
+    color: #464646;
+    }
+    li{
+        
+    font-size: 20px;
+    color: #464646;
+    }
  #Salam_Program12345678{
     color: #f8b739;
   }

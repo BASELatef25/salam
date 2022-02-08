@@ -1,0 +1,73 @@
+{% extends "header.html" %}{% load mathfilters %}
+{% block content %}
+4
+<br>
+<br>
+
+
+<br>
+<br>
+<br>
+<div class="contaner">
+	<div class="row">
+	<div id="formborder" class="col">
+	<del>
+	<span><button id="button" type="button" class="btn btn-success">Personal Information</button></span>
+	<span><button id="button" type="button" class="btn btn-success">Course Selection</button></span>
+	<span><button id="button" type="button" class="btn btn-secondary">Educational Background</button></span>
+	<span><button id="button" type="button" class="btn btn-secondary">Upload Materials</button></span>
+</del>
+<br>
+
+	<h4> Registration</h4>
+	<hr>
+	<form method="POST">
+		<button type="submit" class="btn btn-primary">Register</button>
+	</form>
+</div>
+<div  class="col">
+<h4>Location</h4>
+<ul>
+	<li>
+		<p>Salam Program</p>
+	</li>
+	<li>
+		<p>Aqaba, Jordan</p>
+	</li>
+	<li>
+		<p>Email:<a href="mailto:Salam_Program@aut.edu.jo">Salam_Program@aut.edu.jo</a>
+	</li>
+	<li>
+		<p>Tel: +962 (0) 3 2092310</p>
+	</li>
+	<li>
+		<p>Tel: +962 (0) 3 2092300</p>
+	</li>
+</ul>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8264.523534701562!2d35.01199239443032!3d29.434521292810125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15007713a3c23dbd%3A0x876c9b5ce76af53b!2sAqaba%20University%20Of%20Technology!5e0!3m2!1sen!2sbg!4v1644217671361!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div>
+</div>
+<br>
+<br>
+
+
+
+
+<style>
+	#input{
+		color: gray;
+		width: 100%;
+		font-size: 15pt;
+    	padding: 5px;
+	}
+	#button{
+		font-size: 12px;
+	}
+	#formborder{
+		border: solid;
+		padding: 15px;
+	}
+</style>
+
+{% endblock %}

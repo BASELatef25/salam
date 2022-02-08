@@ -1,5 +1,65 @@
 {% extends "header.html" %}{% load mathfilters %}
 {% block content %}
+
+
+<br>
+<br>
+<div class="container-fluid">
+<div class="row">
+<div style="width:70%;" class="col-lg-9">
+<h1>Recreation and Activities</h1>
+<p>Jordan is a very extraordinary country that combines beauty, history, modernity, and diversity. Jordan is definitely one of the most enticing places for people seeking adventure, recreation, the discovery of other cultures, leisure, or relaxation, due to its distinct East meets West beauty. Jordan provides the ultimate vacation experience, with something for everyone! It has a refined respect for the past, as seen by its gorgeous architecture and Old World customs, and an eager celebration of the present, as evidenced by its numerous modern facilities and activities.</p>
+</div>
+
+    <div style="width:30%;" class="col-lg-3">
+    <br>
+    <br>
+
+      <ul>
+          <li><a class="dropdown-item" href="/Safty"><p>Safety</p></a></li>
+          <li><a class="dropdown-item" href="/Travel_and_Visas"><p>Travel and Visas</p></a></a></li>
+          <li><a class="dropdown-item" href="/Getting_Around_in_Aqaba"><p>Getting Around in Aqaba</p></a></li>
+          <li><a class="dropdown-item" href="/about"><p>Recreation and Activities</p></a></li>
+          <li><a class="dropdown-item" href="/Health_and_Wellness"><p>Health and Wellness</p></a></li>
+      </ul>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- Portfolio item 1--><!--
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">Salam Program</h2>
@@ -8,7 +68,6 @@
                 <div class="row">
                 {% for item in Portfolio %}
                     <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal{{ item.id }}">
                                 
@@ -23,8 +82,6 @@
                 </div>
             </div>
 
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
                 {% for item in Portfolio %}
                       <div class="portfolio-modal modal fade" id="portfolioModal{{ item.id }}" tabindex="-1" role="dialog" aria-hidden="true">
                           <div class="modal-dialog">
@@ -40,7 +97,6 @@
                                       <div class="row left-content">
                                           <div class="">
                                               <div class="modal-body">
-                                                  <!-- Project details-->
                                                   <h2 style="text-align: left;">{{ item.title }}</h2>
                                                   <div style="width: fit-content;">
                                                   <h3 style="text-align: left;"><span><pre style="    white-space: break-spaces;font-family: 'Poppins'">{{ item.text }}</pre></span></h3>
@@ -57,16 +113,13 @@
                               </div>
                           </div>
                       </div>
-                {% endfor %}
+                {% endfor %}-->
+                
 
 
 
 
 <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading ">Popular tourism places</h2>
-                    <h4 class="section-heading ">you will visit it with salam</h4>
-                </div>
                 <br>
                 <ul class="timeline">
                 {% with counter=0.0 %}
@@ -5585,7 +5638,7 @@ textarea.form-control-lg {
 .toast-container > :not(:last-child) {
   margin-bottom: 0.75rem;
 }
-
+   
 .toast-header {
   display: flex;
   align-items: center;
