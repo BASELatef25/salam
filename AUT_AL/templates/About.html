@@ -131,8 +131,10 @@
                                 <div class="timeline-heading">
                                     <p style="">{{item.date}}</p>
                                     <h3 style="text-align: justify;" class="subheading">{{item.title}}</h3>
+                                    
                                 </div>
                                 <div  style="text-align: justify;"  class="timeline-body"><p class="text-muted">{{item.text}}</p></div>
+                                <a href="{{ item.link }}"><button id="button" type="button" class="btn btn-success"> Read Mor</button></a>
                             </div>
                         </li>
                     {% else %}
@@ -143,8 +145,10 @@
                                 <div class="timeline-heading">
                                     <p>{{item.date}}</p>
                                     <h3  style="text-align: justify;"  class="subheading">{{item.title}}</h3>
+
                                 </div>
                                 <div style="text-align: justify;"  class="timeline-body"><p class="text-muted">{{item.text}}</p></div>
+                                 <a href="{{ item.link }}"><button id="button" type="button" class="btn btn-success"> Read Mor</button></a>
                             </div>
                         </li>
                     {% endif %} 

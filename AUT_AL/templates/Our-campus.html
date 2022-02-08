@@ -22,54 +22,11 @@
   </h3>
   </center>
 </div>
-<div class="slideshow-container">
-
-  <!-- Full-width slides/quotes -->
-  {% for item in slid %}
-  <div class="mySlides">
-    <center>
-    <div style="
-    max-width: 400px;
-    min-width: 240px;
-    position: absolute;
-    background-color: #4b4b4ba1;
-    height: -webkit-fill-available;
-    padding: 25px;
-        margin-bottom: 20px;">
-      <h4>{{ item.title }}</h4>
-      <br>
-      <div style="
-    font-size: 99%;
-    color: #ffffff;
-    text-align: justify;">
-      {{ item.pragrapg }}
-      </div>
-      <br>
-      <a href="{{ item.link }}"><button  style="
-    width: 70px;
-    height: 29px;
-    font-size: 7pt;" type="button" class="btn btn-dark">read mor</button></a>
-    </div>
-    </center>
-    <div>
-    <img src="/static/images/{{ item.image }}"    id="fnfn">
-    </div>
-    
-  </div>
-  {% endfor %}
-  <!-- Next/prev buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<!-- Dots/bullets/indicators -->
-<div class="dot-container">
-  {% for item in slid %}
-  <span class="dot" onclick="currentSlide({{item.id}})"></span>
-  {% endfor %}
-</div>
-
 <br>
+<img style="width:80%;" src="{% static 'header/aut123.jpg' %}">
+<p style="text-align:justify;">Aqaba University of Technology (AUT) is the first private university established in southern Jordan. It is located on a beautiful view of the Gulf of Aqaba. The university provides a number pf undergraduate programs accredited by The Higher Education Accreditation Commission. These programs are distributed over five faculties: - Munib and Angela Al Masri Faculty of Engineering, where the majors of civil Engineering and Architecture are taught. - Michael Sayegh Faculty of Pharmacy.
+</p>
+<a href="http://www.aut.edu.jo/en"><button id="button" type="button" class="btn btn-success"> Read More</button></a>
 
 
 
